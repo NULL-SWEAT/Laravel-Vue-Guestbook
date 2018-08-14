@@ -17,6 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('entries', 'EntriesController@index');
-
-Route::post('entries', 'EntriesController@store');
+Route::apiResource('entries', 'EntriesController');

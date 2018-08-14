@@ -19,12 +19,12 @@ Vue.use(VueRouter);
  */
 
 Vue.component('navbar', require('./components/Navbar.vue'));
-// Vue.component('entries', require('./components/Entries.vue'));
+
 import Entries from './components/Entries';
 import AddEntry from './components/AddEntry';
 
 const router = new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     routes: [
         {
             path: '/',

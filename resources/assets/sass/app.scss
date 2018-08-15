@@ -12,3 +12,13 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+// Transition for router-view
+.router-fade-enter-active,
+.router-fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+.router-fade-enter,
+.router-fade-leave-active {
+    opacity: 0
+}

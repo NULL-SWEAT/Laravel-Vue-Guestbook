@@ -21,7 +21,9 @@
 
             <div class="container">
 
-                <router-view></router-view>
+                <transition name="router-fade" mode="out-in">
+                    <router-view></router-view>
+                </transition>
 
             </div>
         </div>
